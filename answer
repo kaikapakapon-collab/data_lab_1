@@ -1,0 +1,11 @@
+Part 1: Data Set Information
+ Meta data: 2026 Rank, Previous Rank, Institution Name, Country/Territory, Region, Size, Focus, Research, Status, AR SCORE, AR RANK, ER SCORE, ER RANK, FSR SCORE, FSR RANK, CPF SCORE, CPF RANK, IFR SCORE, IFR RANK, ISR SCORE, ISR RANK, ISD SCORE, ISD RANK, IRN SCORE, IRN RANK, EO SCORE, EO RANK, SUS SCORE, SUS RANK, Overall SCORE.
+
+ Data types:
+ String: Institution Name, Country/Territory, Region, Size, Focus, Research, Status, and all Rank attributes.
+ Double: All Score attributes (Parsed from String).
+
+Extra Credit: Problems with Traditional Database Files
+1. Domain Integrity: Traditional file systems lack built-in validation, making it impossible to enforce data types (e.g., preventing alphabetic characters in a numerical score column).
+2. NULL values: Missing data is represented inconsistently (e.g., using '-'), which leads to runtime errors like NumberFormatException during calculations.
+3. Data Redundancy & Inconsistency: Data is often duplicated across files, which makes it difficult to maintain and leads to inconsistencies when updates are performed in one location but not others.
